@@ -23,7 +23,6 @@ describe "#my_all?" do
     end
     expect(yielded).to eq([1,2,3])
   end
-
   it "returns false when the block condition is not met" do
     expect(my_all?(collection) {|i| i < 3}).to eq(false)
   end
